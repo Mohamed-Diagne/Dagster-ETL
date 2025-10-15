@@ -1,0 +1,5 @@
+load_from:
+  - python_module:
+      module_name: market_etl_pipeline.definitions
+      attribute: defs
+      executable_path: /Users/mohameddiagne/Desktop/ETL Challenge/.venv/bin/python

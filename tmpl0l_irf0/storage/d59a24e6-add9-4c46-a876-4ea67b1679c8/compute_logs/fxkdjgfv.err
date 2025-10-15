@@ -1,0 +1,49 @@
+[32m2025-10-10 14:52:02 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - 14466 - LOGS_CAPTURED - Started capturing logs in process (pid: 14466).
+[32m2025-10-10 14:52:02 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - 14466 - asset_news - STEP_START - Started execution of step "asset_news".
+[32m2025-10-10 14:52:02 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for AAPL
+[32m2025-10-10 14:52:03 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for AAPL
+[32m2025-10-10 14:52:04 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for MSFT
+[32m2025-10-10 14:52:05 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for MSFT
+[32m2025-10-10 14:52:05 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for GOOGL
+[32m2025-10-10 14:52:09 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for GOOGL
+[32m2025-10-10 14:52:10 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for AMZN
+[32m2025-10-10 14:52:13 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for AMZN
+[32m2025-10-10 14:52:14 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for META
+[32m2025-10-10 14:52:18 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for META
+[32m2025-10-10 14:52:18 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for NVDA
+[32m2025-10-10 14:52:23 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for NVDA
+[32m2025-10-10 14:52:23 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for TSLA
+[32m2025-10-10 14:52:26 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for TSLA
+[32m2025-10-10 14:52:27 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for NFLX
+[32m2025-10-10 14:52:38 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for AMD
+[32m2025-10-10 14:52:39 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for AMD
+[32m2025-10-10 14:52:40 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for INTC
+[32m2025-10-10 14:52:44 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for INTC
+[32m2025-10-10 14:52:44 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for JPM
+[32m2025-10-10 14:52:46 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for JPM
+[32m2025-10-10 14:52:46 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for BAC
+[32m2025-10-10 14:52:48 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for BAC
+[32m2025-10-10 14:52:49 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for GS
+[32m2025-10-10 14:52:50 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for GS
+[32m2025-10-10 14:52:51 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for MS
+[32m2025-10-10 14:52:53 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for MS
+[32m2025-10-10 14:52:54 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for WFC
+[32m2025-10-10 14:52:55 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for WFC
+[32m2025-10-10 14:52:56 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for C
+[32m2025-10-10 14:52:59 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for C
+[32m2025-10-10 14:53:00 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for BLK
+[32m2025-10-10 14:53:01 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for BLK
+[32m2025-10-10 14:53:01 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for V
+[32m2025-10-10 14:53:03 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for V
+[32m2025-10-10 14:53:03 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for MA
+[32m2025-10-10 14:53:04 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for MA
+[32m2025-10-10 14:53:05 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for AXP
+[32m2025-10-10 14:53:06 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for AXP
+[32m2025-10-10 14:53:06 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Fetching RSS for JNJ
+[32m2025-10-10 14:53:08 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - ✓ News found for JNJ
+[32m2025-10-10 14:53:09 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Retrieved 20 articles via RSS
+[32m2025-10-10 14:53:09 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - 14466 - asset_news - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2025-10-10 14:53:09 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - asset_news - Writing file at: /Users/mohameddiagne/Desktop/ETL Challenge/tmpl0l_irf0/storage/asset_news using PickledObjectFilesystemIOManager...
+[32m2025-10-10 14:53:09 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - 14466 - asset_news - ASSET_MATERIALIZATION - Materialized value asset_news.
+[32m2025-10-10 14:53:09 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - 14466 - asset_news - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-10-10 14:53:09 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - d59a24e6-add9-4c46-a876-4ea67b1679c8 - 14466 - asset_news - STEP_SUCCESS - Finished execution of step "asset_news" in 1m6s.

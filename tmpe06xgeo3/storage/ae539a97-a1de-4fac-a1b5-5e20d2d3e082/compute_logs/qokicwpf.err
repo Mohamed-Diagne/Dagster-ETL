@@ -1,0 +1,199 @@
+[32m2025-10-13 12:19:19 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - 17484 - LOGS_CAPTURED - Started capturing logs in process (pid: 17484).
+[32m2025-10-13 12:19:19 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - 17484 - asset_prices - STEP_START - Started execution of step "asset_prices".
+[32m2025-10-13 12:19:19 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - asset_prices - Fetching prices for 52 tickers
+[32m2025-10-13 12:19:19 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - asset_prices - Batch 1: 15 tickers
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'INTC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WFC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NFLX' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['AMZN', 'GOOGL', 'META', 'INTC', 'AMD', 'WFC', 'MSFT', 'MS', 'GS', 'AAPL', 'BAC', 'TSLA', 'NFLX', 'NVDA', 'JPM']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'AMD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WFC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'INTC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NFLX' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['MS', 'GS', 'WFC', 'GOOGL', 'META', 'AMZN', 'INTC', 'AMD', 'JPM', 'NFLX', 'BAC', 'MSFT', 'AAPL', 'TSLA', 'NVDA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'AMD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WFC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'INTC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NFLX' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['AMD', 'MS', 'WFC', 'META', 'INTC', 'AMZN', 'GOOGL', 'GS', 'BAC', 'MSFT', 'JPM', 'NVDA', 'AAPL', 'NFLX', 'TSLA']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[32m2025-10-13 12:19:27 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - asset_prices - Batch 2: 15 tickers
+Failed to get ticker 'LLY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AXP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DHR' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MRK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BLK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JNJ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'C' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABBV' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TMO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'UNH' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PFE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BMY' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['MA', 'DHR', 'V', 'AXP', 'JNJ', 'BLK', 'MRK', 'LLY', 'C', 'ABBV', 'ABT', 'TMO', 'BMY', 'UNH', 'PFE']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MRK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JNJ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DHR' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'LLY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AXP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BLK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TMO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BMY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABBV' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PFE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'UNH' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'C' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['LLY', 'BLK', 'JNJ', 'MA', 'V', 'DHR', 'AXP', 'MRK', 'ABBV', 'BMY', 'UNH', 'ABT', 'TMO', 'PFE', 'C']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'MRK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JNJ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DHR' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'LLY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AXP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BLK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TMO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BMY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABBV' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PFE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'C' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'UNH' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['JNJ', 'LLY', 'DHR', 'AXP', 'BLK', 'MA', 'V', 'MRK', 'BMY', 'ABBV', 'C', 'PFE', 'TMO', 'ABT', 'UNH']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[32m2025-10-13 12:19:34 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - asset_prices - Batch 3: 15 tickers
+Failed to get ticker 'CVX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COST' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WMT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'HD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SLB' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'XOM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'EOG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PEP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NKE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SBUX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'KO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PG' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['MCD', 'XOM', 'DIS', 'CVX', 'COST', 'WMT', 'SLB', 'HD', 'EOG', 'NKE', 'SBUX', 'COP', 'PEP', 'KO', 'PG']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'CVX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COST' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'HD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SLB' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'XOM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WMT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'EOG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NKE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PEP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'KO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SBUX' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['WMT', 'HD', 'XOM', 'MCD', 'SLB', 'COST', 'DIS', 'CVX', 'EOG', 'KO', 'NKE', 'PG', 'SBUX', 'COP', 'PEP']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'CVX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COST' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'HD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SLB' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'XOM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WMT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'EOG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PEP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NKE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'KO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SBUX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COP' reason: Expecting value: line 1 column 1 (char 0)
+
+15 Failed downloads:
+['SLB', 'HD', 'MCD', 'XOM', 'DIS', 'CVX', 'WMT', 'COST', 'NKE', 'PEP', 'COP', 'PG', 'EOG', 'SBUX', 'KO']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[32m2025-10-13 12:19:42 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - asset_prices - Batch 4: 7 tickers
+Failed to get ticker 'QQQ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SPY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'IWM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'VTI' reason: Expecting value: line 1 column 1 (char 0)
+
+7 Failed downloads:
+['BTC-USD', 'ETH-USD', 'SPY', 'QQQ', 'IWM', 'DIA', 'VTI']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'QQQ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SPY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'VTI' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'IWM' reason: Expecting value: line 1 column 1 (char 0)
+
+7 Failed downloads:
+['VTI', 'BTC-USD', 'IWM', 'DIA', 'ETH-USD', 'SPY', 'QQQ']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+Failed to get ticker 'QQQ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SPY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'VTI' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'IWM' reason: Expecting value: line 1 column 1 (char 0)
+
+7 Failed downloads:
+['DIA', 'IWM', 'VTI', 'ETH-USD', 'BTC-USD', 'SPY', 'QQQ']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[32m2025-10-13 12:19:46 +0200[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - ae539a97-a1de-4fac-a1b5-5e20d2d3e082 - 17484 - asset_prices - STEP_FAILURE - Execution of step "asset_prices" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "asset_prices"::
+
+RuntimeError: No price data retrieved
+
+Stack Trace:
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 467, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 131, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 125, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/market_etl_pipeline/assets/prices.py", line 104, in asset_prices
+    raise RuntimeError("No price data retrieved")
+[0m

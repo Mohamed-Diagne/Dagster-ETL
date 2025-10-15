@@ -1,0 +1,61 @@
+[32m2025-10-13 12:54:36 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - 19217 - LOGS_CAPTURED - Started capturing logs in process (pid: 19217).
+[32m2025-10-13 12:54:36 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - 19217 - asset_news - STEP_START - Started execution of step "asset_news".
+[32m2025-10-13 12:54:36 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - asset_news - Fetching news for 52 tickers
+TSLA: Failed to retrieve the news and received faulty response instead.
+AMD: Failed to retrieve the news and received faulty response instead.
+INTC: Failed to retrieve the news and received faulty response instead.
+NFLX: Failed to retrieve the news and received faulty response instead.
+AAPL: Failed to retrieve the news and received faulty response instead.
+META: Failed to retrieve the news and received faulty response instead.
+NVDA: Failed to retrieve the news and received faulty response instead.
+GOOGL: Failed to retrieve the news and received faulty response instead.
+AMZN: Failed to retrieve the news and received faulty response instead.
+MSFT: Failed to retrieve the news and received faulty response instead.
+C: Failed to retrieve the news and received faulty response instead.
+V: Failed to retrieve the news and received faulty response instead.
+GS: Failed to retrieve the news and received faulty response instead.
+MS: Failed to retrieve the news and received faulty response instead.
+JPM: Failed to retrieve the news and received faulty response instead.
+AXP: Failed to retrieve the news and received faulty response instead.
+BAC: Failed to retrieve the news and received faulty response instead.
+BLK: Failed to retrieve the news and received faulty response instead.
+WFC: Failed to retrieve the news and received faulty response instead.
+MA: Failed to retrieve the news and received faulty response instead.
+JNJ: Failed to retrieve the news and received faulty response instead.
+LLY: Failed to retrieve the news and received faulty response instead.
+ABT: Failed to retrieve the news and received faulty response instead.
+UNH: Failed to retrieve the news and received faulty response instead.
+MRK: Failed to retrieve the news and received faulty response instead.
+PFE: Failed to retrieve the news and received faulty response instead.
+BMY: Failed to retrieve the news and received faulty response instead.
+TMO: Failed to retrieve the news and received faulty response instead.
+ABBV: Failed to retrieve the news and received faulty response instead.
+DHR: Failed to retrieve the news and received faulty response instead.
+PG: Failed to retrieve the news and received faulty response instead.
+PEP: Failed to retrieve the news and received faulty response instead.
+SBUX: Failed to retrieve the news and received faulty response instead.
+WMT: Failed to retrieve the news and received faulty response instead.
+HD: Failed to retrieve the news and received faulty response instead.
+DIS: Failed to retrieve the news and received faulty response instead.
+MCD: Failed to retrieve the news and received faulty response instead.
+COST: Failed to retrieve the news and received faulty response instead.
+KO: Failed to retrieve the news and received faulty response instead.
+NKE: Failed to retrieve the news and received faulty response instead.
+CVX: Failed to retrieve the news and received faulty response instead.
+COP: Failed to retrieve the news and received faulty response instead.
+QQQ: Failed to retrieve the news and received faulty response instead.
+SPY: Failed to retrieve the news and received faulty response instead.
+DIA: Failed to retrieve the news and received faulty response instead.
+IWM: Failed to retrieve the news and received faulty response instead.
+XOM: Failed to retrieve the news and received faulty response instead.
+VTI: Failed to retrieve the news and received faulty response instead.
+SLB: Failed to retrieve the news and received faulty response instead.
+EOG: Failed to retrieve the news and received faulty response instead.
+BTC-USD: Failed to retrieve the news and received faulty response instead.
+ETH-USD: Failed to retrieve the news and received faulty response instead.
+[32m2025-10-13 12:54:37 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - asset_news - No news retrieved, using empty DataFrame
+[32m2025-10-13 12:54:37 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - 19217 - asset_news - STEP_OUTPUT - Yielded output "result" of type "DataFrame". (Type check passed).
+[32m2025-10-13 12:54:37 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - asset_news - Writing file at: /Users/mohameddiagne/Desktop/ETL Challenge/tmpvn2r4q_m/storage/asset_news using PickledObjectFilesystemIOManager...
+[32m2025-10-13 12:54:37 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - 19217 - asset_news - ASSET_MATERIALIZATION - Materialized value asset_news.
+[32m2025-10-13 12:54:38 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - 19217 - asset_news - HANDLED_OUTPUT - Handled output "result" using IO manager "io_manager"
+[32m2025-10-13 12:54:38 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - e329012e-806e-4931-bd9a-19bccb246e39 - 19217 - asset_news - STEP_SUCCESS - Finished execution of step "asset_news" in 1.68s.

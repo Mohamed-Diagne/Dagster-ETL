@@ -1,0 +1,80 @@
+[32m2025-10-10 14:56:28 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dd0a5704-bc0b-4c30-a616-6b074ebb018a - 14627 - LOGS_CAPTURED - Started capturing logs in process (pid: 14627).
+[32m2025-10-10 14:56:28 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - dd0a5704-bc0b-4c30-a616-6b074ebb018a - 14627 - asset_prices - STEP_START - Started execution of step "asset_prices".
+[32m2025-10-10 14:56:28 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - dd0a5704-bc0b-4c30-a616-6b074ebb018a - asset_prices - Fetching prices for 52 tickers
+Failed to get ticker 'C' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TMO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JNJ' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'GS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'KO' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PFE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DIS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SPY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'CVX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SBUX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'LLY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'EOG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'HD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BLK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'UNH' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'IWM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'DHR' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WFC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MS' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'ABBV' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COST' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'INTC' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NKE' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AMD' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PG' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'WMT' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'AXP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'COP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'VTI' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'PEP' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'XOM' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'NFLX' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'BMY' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'SLB' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'MRK' reason: Expecting value: line 1 column 1 (char 0)
+Failed to get ticker 'QQQ' reason: Expecting value: line 1 column 1 (char 0)
+
+52 Failed downloads:
+['C', 'NVDA', 'GS', 'TMO', 'DIA', 'ABT', 'JNJ', 'KO', 'DIS', 'PFE', 'TSLA', 'CVX', 'MA', 'SPY', 'META', 'SBUX', 'MCD', 'GOOGL', 'LLY', 'EOG', 'IWM', 'HD', 'UNH', 'BLK', 'DHR', 'V', 'ETH-USD', 'BTC-USD', 'MS', 'BAC', 'WFC', 'ABBV', 'COST', 'AMZN', 'INTC', 'JPM', 'AXP', 'NKE', 'MSFT', 'PG', 'WMT', 'AAPL', 'AMD', 'COP', 'PEP', 'MRK', 'VTI', 'BMY', 'NFLX', 'SLB', 'XOM', 'QQQ']: JSONDecodeError('Expecting value: line 1 column 1 (char 0)')
+[32m2025-10-10 14:56:40 +0200[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - dd0a5704-bc0b-4c30-a616-6b074ebb018a - asset_prices - Download failed: No data downloaded[0m
+[32m2025-10-10 14:56:40 +0200[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - dd0a5704-bc0b-4c30-a616-6b074ebb018a - 14627 - asset_prices - STEP_FAILURE - Execution of step "asset_prices" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "asset_prices"::
+
+RuntimeError: Failed to fetch price data: No data downloaded
+
+Stack Trace:
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 467, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 131, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 125, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/market_etl_pipeline/assets/prices.py", line 96, in asset_prices
+    raise RuntimeError(f"Failed to fetch price data: {e}")
+
+The above exception occurred during handling of the following exception:
+ValueError: No data downloaded
+
+Stack Trace:
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/market_etl_pipeline/assets/prices.py", line 69, in asset_prices
+    raise ValueError("No data downloaded")
+[0m

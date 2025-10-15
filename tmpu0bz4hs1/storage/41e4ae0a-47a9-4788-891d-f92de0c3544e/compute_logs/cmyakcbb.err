@@ -1,0 +1,225 @@
+[32m2025-10-14 17:55:37 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - 25869 - LOGS_CAPTURED - Started capturing logs in process (pid: 25869).
+[32m2025-10-14 17:55:37 +0200[0m - dagster - [34mDEBUG[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - 25869 - asset_prices - STEP_START - Started execution of step "asset_prices".
+[32m2025-10-14 17:55:37 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - Fetching prices for 52 tickers
+[32m2025-10-14 17:55:37 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [1/52] Fetching AAPL...
+$AAPL: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:39 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ AAPL: no data
+[32m2025-10-14 17:55:40 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [2/52] Fetching MSFT...
+$MSFT: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:40 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ MSFT: no data
+[32m2025-10-14 17:55:42 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [3/52] Fetching GOOGL...
+$GOOGL: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:42 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ GOOGL: no data
+[32m2025-10-14 17:55:43 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [4/52] Fetching AMZN...
+$AMZN: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:44 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ AMZN: no data
+[32m2025-10-14 17:55:45 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [5/52] Fetching META...
+Failed to get ticker 'META' reason: Expecting value: line 1 column 1 (char 0)
+$META: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:46 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ META: no data
+[32m2025-10-14 17:55:47 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [6/52] Fetching NVDA...
+Failed to get ticker 'NVDA' reason: Expecting value: line 1 column 1 (char 0)
+$NVDA: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:48 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ NVDA: no data
+[32m2025-10-14 17:55:49 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [7/52] Fetching TSLA...
+Failed to get ticker 'TSLA' reason: Expecting value: line 1 column 1 (char 0)
+$TSLA: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:50 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ TSLA: no data
+[32m2025-10-14 17:55:51 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [8/52] Fetching NFLX...
+Failed to get ticker 'NFLX' reason: Expecting value: line 1 column 1 (char 0)
+$NFLX: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:52 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ NFLX: no data
+[32m2025-10-14 17:55:53 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [9/52] Fetching AMD...
+Failed to get ticker 'AMD' reason: Expecting value: line 1 column 1 (char 0)
+$AMD: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:54 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ AMD: no data
+[32m2025-10-14 17:55:55 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [10/52] Fetching INTC...
+Failed to get ticker 'INTC' reason: Expecting value: line 1 column 1 (char 0)
+$INTC: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:56 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ INTC: no data
+[32m2025-10-14 17:55:57 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [11/52] Fetching JPM...
+Failed to get ticker 'JPM' reason: Expecting value: line 1 column 1 (char 0)
+$JPM: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:55:58 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ JPM: no data
+[32m2025-10-14 17:55:59 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [12/52] Fetching BAC...
+Failed to get ticker 'BAC' reason: Expecting value: line 1 column 1 (char 0)
+$BAC: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:00 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ BAC: no data
+[32m2025-10-14 17:56:01 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [13/52] Fetching GS...
+Failed to get ticker 'GS' reason: Expecting value: line 1 column 1 (char 0)
+$GS: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:02 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ GS: no data
+[32m2025-10-14 17:56:03 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [14/52] Fetching MS...
+Failed to get ticker 'MS' reason: Expecting value: line 1 column 1 (char 0)
+$MS: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:04 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ MS: no data
+[32m2025-10-14 17:56:05 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [15/52] Fetching WFC...
+Failed to get ticker 'WFC' reason: Expecting value: line 1 column 1 (char 0)
+$WFC: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:06 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ WFC: no data
+[32m2025-10-14 17:56:07 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [16/52] Fetching C...
+Failed to get ticker 'C' reason: Expecting value: line 1 column 1 (char 0)
+$C: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:08 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ C: no data
+[32m2025-10-14 17:56:09 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [17/52] Fetching BLK...
+Failed to get ticker 'BLK' reason: Expecting value: line 1 column 1 (char 0)
+$BLK: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:10 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ BLK: no data
+[32m2025-10-14 17:56:12 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [18/52] Fetching V...
+Failed to get ticker 'V' reason: Expecting value: line 1 column 1 (char 0)
+$V: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:12 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ V: no data
+[32m2025-10-14 17:56:14 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [19/52] Fetching MA...
+Failed to get ticker 'MA' reason: Expecting value: line 1 column 1 (char 0)
+$MA: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:14 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ MA: no data
+[32m2025-10-14 17:56:16 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [20/52] Fetching AXP...
+Failed to get ticker 'AXP' reason: Expecting value: line 1 column 1 (char 0)
+$AXP: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:16 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ AXP: no data
+[32m2025-10-14 17:56:18 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [21/52] Fetching JNJ...
+Failed to get ticker 'JNJ' reason: Expecting value: line 1 column 1 (char 0)
+$JNJ: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:18 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ JNJ: no data
+[32m2025-10-14 17:56:20 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [22/52] Fetching UNH...
+Failed to get ticker 'UNH' reason: Expecting value: line 1 column 1 (char 0)
+$UNH: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:20 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ UNH: no data
+[32m2025-10-14 17:56:22 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [23/52] Fetching PFE...
+Failed to get ticker 'PFE' reason: Expecting value: line 1 column 1 (char 0)
+$PFE: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:22 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ PFE: no data
+[32m2025-10-14 17:56:24 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [24/52] Fetching ABBV...
+Failed to get ticker 'ABBV' reason: Expecting value: line 1 column 1 (char 0)
+$ABBV: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:24 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ ABBV: no data
+[32m2025-10-14 17:56:26 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [25/52] Fetching TMO...
+Failed to get ticker 'TMO' reason: Expecting value: line 1 column 1 (char 0)
+$TMO: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:26 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ TMO: no data
+[32m2025-10-14 17:56:28 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [26/52] Fetching MRK...
+Failed to get ticker 'MRK' reason: Expecting value: line 1 column 1 (char 0)
+$MRK: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:29 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ MRK: no data
+[32m2025-10-14 17:56:30 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [27/52] Fetching LLY...
+Failed to get ticker 'LLY' reason: Expecting value: line 1 column 1 (char 0)
+$LLY: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:30 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ LLY: no data
+[32m2025-10-14 17:56:32 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [28/52] Fetching ABT...
+Failed to get ticker 'ABT' reason: Expecting value: line 1 column 1 (char 0)
+$ABT: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:33 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ ABT: no data
+[32m2025-10-14 17:56:34 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [29/52] Fetching DHR...
+Failed to get ticker 'DHR' reason: Expecting value: line 1 column 1 (char 0)
+$DHR: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:36 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ DHR: no data
+[32m2025-10-14 17:56:38 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [30/52] Fetching BMY...
+Failed to get ticker 'BMY' reason: Expecting value: line 1 column 1 (char 0)
+$BMY: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:40 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ BMY: no data
+[32m2025-10-14 17:56:41 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [31/52] Fetching WMT...
+Failed to get ticker 'WMT' reason: Expecting value: line 1 column 1 (char 0)
+$WMT: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:42 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ WMT: no data
+[32m2025-10-14 17:56:43 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [32/52] Fetching PG...
+Failed to get ticker 'PG' reason: Expecting value: line 1 column 1 (char 0)
+$PG: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:44 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ PG: no data
+[32m2025-10-14 17:56:45 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [33/52] Fetching KO...
+Failed to get ticker 'KO' reason: Expecting value: line 1 column 1 (char 0)
+$KO: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:46 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ KO: no data
+[32m2025-10-14 17:56:47 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [34/52] Fetching PEP...
+Failed to get ticker 'PEP' reason: Expecting value: line 1 column 1 (char 0)
+$PEP: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:48 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ PEP: no data
+[32m2025-10-14 17:56:49 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [35/52] Fetching NKE...
+Failed to get ticker 'NKE' reason: Expecting value: line 1 column 1 (char 0)
+$NKE: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:50 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ NKE: no data
+[32m2025-10-14 17:56:52 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [36/52] Fetching COST...
+Failed to get ticker 'COST' reason: Expecting value: line 1 column 1 (char 0)
+$COST: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:52 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ COST: no data
+[32m2025-10-14 17:56:54 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [37/52] Fetching HD...
+Failed to get ticker 'HD' reason: Expecting value: line 1 column 1 (char 0)
+$HD: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:54 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ HD: no data
+[32m2025-10-14 17:56:56 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [38/52] Fetching MCD...
+$MCD: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:56 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ MCD: no data
+[32m2025-10-14 17:56:57 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [39/52] Fetching SBUX...
+Failed to get ticker 'SBUX' reason: Expecting value: line 1 column 1 (char 0)
+$SBUX: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:56:58 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ SBUX: no data
+[32m2025-10-14 17:56:59 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [40/52] Fetching DIS...
+Failed to get ticker 'DIS' reason: Expecting value: line 1 column 1 (char 0)
+$DIS: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:00 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ DIS: no data
+[32m2025-10-14 17:57:01 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [41/52] Fetching XOM...
+Failed to get ticker 'XOM' reason: Expecting value: line 1 column 1 (char 0)
+$XOM: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:02 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ XOM: no data
+[32m2025-10-14 17:57:03 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [42/52] Fetching CVX...
+Failed to get ticker 'CVX' reason: Expecting value: line 1 column 1 (char 0)
+$CVX: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:04 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ CVX: no data
+[32m2025-10-14 17:57:06 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [43/52] Fetching COP...
+Failed to get ticker 'COP' reason: Expecting value: line 1 column 1 (char 0)
+$COP: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:06 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ COP: no data
+[32m2025-10-14 17:57:07 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [44/52] Fetching SLB...
+Failed to get ticker 'SLB' reason: Expecting value: line 1 column 1 (char 0)
+$SLB: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:08 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ SLB: no data
+[32m2025-10-14 17:57:10 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [45/52] Fetching EOG...
+Failed to get ticker 'EOG' reason: Expecting value: line 1 column 1 (char 0)
+$EOG: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:10 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ EOG: no data
+[32m2025-10-14 17:57:12 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [46/52] Fetching SPY...
+Failed to get ticker 'SPY' reason: Expecting value: line 1 column 1 (char 0)
+$SPY: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:12 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ SPY: no data
+[32m2025-10-14 17:57:14 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [47/52] Fetching QQQ...
+Failed to get ticker 'QQQ' reason: Expecting value: line 1 column 1 (char 0)
+$QQQ: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:14 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ QQQ: no data
+[32m2025-10-14 17:57:16 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [48/52] Fetching DIA...
+Failed to get ticker 'DIA' reason: Expecting value: line 1 column 1 (char 0)
+$DIA: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:16 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ DIA: no data
+[32m2025-10-14 17:57:18 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [49/52] Fetching IWM...
+Failed to get ticker 'IWM' reason: Expecting value: line 1 column 1 (char 0)
+$IWM: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:18 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ IWM: no data
+[32m2025-10-14 17:57:20 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [50/52] Fetching VTI...
+Failed to get ticker 'VTI' reason: Expecting value: line 1 column 1 (char 0)
+$VTI: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:21 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ VTI: no data
+[32m2025-10-14 17:57:22 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [51/52] Fetching BTC-USD...
+$BTC-USD: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:22 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ BTC-USD: no data
+[32m2025-10-14 17:57:24 +0200[0m - dagster - [34mINFO[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - [52/52] Fetching ETH-USD...
+$ETH-USD: possibly delisted; no price data found  (period=5d)
+[32m2025-10-14 17:57:24 +0200[0m - dagster - [34mWARNING[0m - __ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - asset_prices - ✗ ETH-USD: no data
+[32m2025-10-14 17:57:24 +0200[0m - dagster - [34mERROR[0m - [31m__ASSET_JOB - 41e4ae0a-47a9-4788-891d-f92de0c3544e - 25869 - asset_prices - STEP_FAILURE - Execution of step "asset_prices" failed.
+
+dagster._core.errors.DagsterExecutionStepExecutionError: Error occurred while executing op "asset_prices"::
+
+RuntimeError: No price data retrieved
+
+Stack Trace:
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/utils.py", line 54, in op_execution_error_boundary
+    yield
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_utils/__init__.py", line 467, in iterate_with_context
+    next_output = next(iterator)
+                  ^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 131, in _coerce_op_compute_fn_to_iterator
+    result = invoke_compute_fn(
+             ^^^^^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/.venv/lib/python3.11/site-packages/dagster/_core/execution/plan/compute_generator.py", line 125, in invoke_compute_fn
+    return fn(context, **args_to_pass) if context_arg_provided else fn(**args_to_pass)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/mohameddiagne/Desktop/ETL Challenge/market_etl_pipeline/assets/prices.py", line 74, in asset_prices
+    raise RuntimeError("No price data retrieved")
+[0m
