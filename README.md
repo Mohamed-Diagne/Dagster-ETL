@@ -256,3 +256,4 @@ Modifier `market_etl_pipeline/config.py` :
 # Observer l'exécution en temps réel
 # PDF généré dans outputs/
 ```
+
