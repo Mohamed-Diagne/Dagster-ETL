@@ -8,18 +8,29 @@ Démontrer la maîtrise de **Dagster** pour :
 - Gérer des **assets** avec dépendances automatiques
 - Tracker le **lineage** (traçabilité des données)
 - Orchestrer un pipeline ETL réel
-- Intégrer des librairies externes (yfinance)
+- Intégrer des APIs externes (Yahoo Finance, Google News RSS)
 
 ## 🚀 Installation & Lancement
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate
-pip install -e .
-dagster dev
+# Cloner le repo
+git clone https://github.com/Mohamed-Diagne/Dagster-ETL.git
+cd Dagster-ETL
+
+# Créer environnement virtuel
+python3 -m venv .venv
+source .venv/bin/activate
+
+# Installer dépendances
+pip install -r requirements.txt
+
+# Lancer Dagster
+./run.sh
 ```
 
 Ouvrir **http://localhost:3000** → Cliquer **"Materialize all"**
+
+Le PDF sera généré dans `outputs/market_recap_YYYYMMDD.pdf`
 
 ## 📊 Les 5 Assets Dagster
 
@@ -28,7 +39,7 @@ Dagster gère automatiquement les dépendances entre assets :
 ```
 ┌─────────────┐     ┌──────────────┐
 │asset_prices │     │ asset_news   │
-│(52 tickers) │     │(via yfinance)│
+│(Yahoo API)  │     │(Google RSS)  │
 └──────┬──────┘     └──────┬───────┘
        │                   │
        ├───────────────────┘
@@ -41,8 +52,8 @@ Dagster gère automatiquement les dépendances entre assets :
        │
        ▼
 ┌───────────────────┐
-│data_quality_report│ (BONUS)
-│(5 validations)    │
+│data_quality_report│
+│(validations)      │
 └──────┬────────────┘
        │
        ▼
@@ -55,15 +66,16 @@ Dagster gère automatiquement les dépendances entre assets :
 ```
 
 ### 1. asset_prices
-- **Source** : yfinance API
+- **Source** : Yahoo Finance API REST (directe)
 - **Action** : Récupère 2 jours de prix OHLCV pour 52 tickers
 - **Output** : DataFrame(ticker, date, open, high, low, close, volume)
-- **Error handling** : Retry 3x avec délai 2s
+- **Technique** : Appels séquentiels avec délai 1s pour éviter rate limiting
 
 ### 2. asset_news
-- **Source** : yfinance API
-- **Action** : Récupère news pour 15 tickers
+- **Source** : Google News RSS feeds
+- **Action** : Récupère 3 news par ticker via RSS
 - **Output** : DataFrame(ticker, title, publisher, link, published_date)
+- **Technique** : Parsing XML avec BeautifulSoup
 
 ### 3. asset_returns
 - **Dépend de** : asset_prices
@@ -71,7 +83,7 @@ Dagster gère automatiquement les dépendances entre assets :
 - **Formule** : `(close - prev_close) / prev_close * 100`
 - **Output** : DataFrame(ticker, date, close, prev_close, daily_return, return_pct)
 
-### 4. data_quality_report (BONUS)
+### 4. data_quality_report
 - **Dépend de** : asset_prices, asset_returns
 - **Action** : 5 validations automatiques
   1. Complétude (>= 80%)
@@ -79,141 +91,168 @@ Dagster gère automatiquement les dépendances entre assets :
   3. Outliers (returns > 50%)
   4. Valeurs manquantes
   5. Doublons
-- **Output** : Dict avec quality_score
+- **Output** : Dict avec quality_score et checks
 
 ### 5. market_recap_pdf
 - **Dépend de** : TOUS les assets
-- **Action** : Génère PDF professionnel
+- **Action** : Génère PDF professionnel avec ReportLab
 - **Output** : PDF dans `outputs/market_recap_YYYYMMDD.pdf`
 
 ## 📄 Contenu du PDF
 
-Le PDF généré contient (requirements satisfaits) :
+Le PDF généré contient :
 
-1. ✅ **Executive Summary** - Résumé du jour
-2. ✅ **Chart Top 5 Performers** - Graphique bar chart
+1. ✅ **Executive Summary** - Statistiques du jour (nb assets, avg return, gainers/losers)
+2. ✅ **Chart Top 5 Performers** - Graphique bar chart (matplotlib)
 3. ✅ **Table TOUS les assets** - Prix et returns pour les 52 tickers
-4. ✅ **News du jour** - Articles avec liens cliquables
-5. ✅ **Quality Report** - Score de qualité (BONUS)
+4. ✅ **News du jour** - 1 article par ticker avec liens cliquables
+5. ✅ **Quality Report** - Score de qualité + checks passés/échoués
+
+## 🎨 Architecture Dagster
+
+### Comment ça fonctionne
+
+```
+./run.sh
+   ↓
+lance dagster dev
+   ↓
+lit workspace.yaml → pointe vers definitions.py
+   ↓
+definitions.py charge tous les @asset
+   ↓
+Dagster construit le graph de dépendances
+   ↓
+UI disponible sur localhost:3000
+```
+
+### Fichiers clés
+
+```
+market_etl_pipeline/
+├── __init__.py            # Rend le package importable
+├── config.py              # Configuration (52 tickers, seuils)
+├── definitions.py         # Point d'entrée Dagster
+└── assets/
+    ├── __init__.py        # Rend assets/ importable
+    ├── prices.py          # Fetch prix via Yahoo API
+    ├── news.py            # Fetch news via Google RSS
+    ├── returns.py         # Calcul returns
+    ├── quality_checks.py  # Validations qualité
+    └── pdf_report.py      # Génération PDF
+
+outputs/                   # PDFs générés
+.venv/                     # Environnement Python
+workspace.yaml             # Config Dagster
+pyproject.toml             # Metadata projet
+requirements.txt           # Dépendances
+run.sh                     # Script de lancement
+```
+
+### Passage de données entre assets
+
+Dagster passe automatiquement les données :
+
+```python
+# prices.py
+@asset
+def asset_prices(context) -> pd.DataFrame:
+    return DataFrame  # Dagster stocke ça
+
+# returns.py
+@asset
+def asset_returns(asset_prices: pd.DataFrame) -> pd.DataFrame:
+    # asset_prices est automatiquement passé par Dagster!
+    return calculate_returns(asset_prices)
+```
 
 ## 🎨 Ce que Dagster apporte
 
 ### 1. Asset Management
-Chaque asset est une fonction Python qui produit des données :
-```python
-@asset
-def asset_prices(context):
-    # Récupère les prix
-    return dataframe
-```
+Chaque asset est une fonction Python qui produit des données réutilisables.
 
 ### 2. Lineage Tracking
-Dagster trace automatiquement les dépendances :
-```python
-@asset(deps=["asset_prices"])
-def asset_returns(asset_prices: pd.DataFrame):
-    # Dagster passe automatiquement les données
-    return calculate_returns(asset_prices)
-```
+Dagster trace automatiquement les dépendances et affiche le graph dans l'UI.
 
 ### 3. Metadata & Observability
-Chaque asset peut exposer des métadonnées :
+Chaque asset expose des métadonnées visibles dans l'UI :
 ```python
 context.add_output_metadata({
     "num_records": len(df),
-    "preview": MetadataValue.md(df.head().to_markdown())
+    "preview": MetadataValue.text(df.head().to_csv())
 })
 ```
 
 ### 4. UI Visualization
 L'interface Dagster montre :
-- **Lineage graph** : dépendances visuelles
-- **Metadata** : preview des données
+- **Lineage graph** : dépendances visuelles entre assets
+- **Metadata** : preview des données de chaque asset
 - **Logs** : exécution en temps réel
-- **Run history** : historique
-
-## 🧪 Tests
-
-```bash
-pytest tests/ -v
-```
-
-Valide :
-- Calculs des returns (positifs, négatifs, zéro)
-- Seuils quality checks
-- Edge cases
-
-## 📁 Structure
-
-```
-market_etl_pipeline/
-├── config.py              # 52 tickers + paramètres
-├── definitions.py         # Définitions Dagster
-└── assets/
-    ├── prices.py          # Fetch prix (retry logic)
-    ├── news.py            # Fetch news (yfinance)
-    ├── returns.py         # Calcul returns (groupby+shift)
-    ├── quality_checks.py  # 5 validations (BONUS)
-    └── pdf_report.py      # Génération PDF
-
-tests/
-├── test_returns.py        # Tests calculs
-└── test_quality_checks.py # Tests validations
-```
+- **Run history** : historique des exécutions
 
 ## ⚙️ Configuration
 
 Modifier `market_etl_pipeline/config.py` :
-- `TICKERS` : ajouter/retirer des tickers
-- `QUALITY_CHECKS` : ajuster les seuils
-- `MAX_RETRIES` / `RETRY_DELAY` : tuner resilience
+- `TICKERS` : Liste des 52 tickers trackés
+- `QUALITY_CHECKS` : Seuils de validation
+- `MAX_RETRIES` / `RETRY_DELAY` : Paramètres de resilience
 
-## 🎤 Pour l'Interview
+## 🔧 Gestion des erreurs
 
-### Points clés Dagster à expliquer :
+- **API rate limiting** : Délais séquentiels (1s entre requêtes)
+- **Tickers échoués** : Pipeline continue avec les données disponibles
+- **News manquantes** : DataFrame vide accepté
+- **Quality gates** : Validation avant génération PDF
 
-**1. Asset-based paradigm**
-> "Dagster utilise des assets au lieu de tasks. Chaque asset produit des données réutilisables. C'est plus intuitif que les DAGs traditionnels."
+## 📦 Dépendances principales
 
-**2. Automatic dependency resolution**
-> "Je définis juste `deps=['asset_prices']` et Dagster passe automatiquement les données. Pas besoin de gérer manuellement les inputs/outputs."
-
-**3. Lineage tracking**
-> "Dans l'UI, on voit clairement que returns dépend de prices, le PDF dépend de tout. C'est automatique, pas de code supplémentaire."
-
-**4. Metadata & observability**
-> "Chaque asset expose des métriques : nombre de lignes, preview, quality score. On voit tout dans l'UI sans logger manuellement."
-
-**5. Error resilience**
-> "J'ai ajouté retry logic (3 tentatives) et graceful degradation. Si un ticker échoue, le pipeline continue avec les autres."
-
-**6. Data quality (BONUS)**
-> "Le `data_quality_report` asset valide automatiquement la qualité avant génération PDF. Score de 100% aujourd'hui."
-
-### Flow à expliquer :
-
-> "Le pipeline récupère les prix de 52 instruments via yfinance, calcule les returns avec un shift pandas, valide la qualité, récupère les news, puis génère un PDF avec charts et tables. Dagster orchestre tout et trace les dépendances automatiquement."
-
-## 🔧 Error Handling
-
-- **API failures** : Retry 3x avec 2s de délai
-- **Missing data** : Continue avec données disponibles
-- **Quality gates** : Valide avant PDF
+- `dagster` - Orchestration
+- `pandas` - Manipulation données
+- `requests` - API calls
+- `beautifulsoup4` - Parsing RSS
+- `matplotlib` - Génération charts
+- `reportlab` - Génération PDF
 
 ## ✅ Requirements Coverage
 
 | Requirement | Status |
 |------------|--------|
-| 50+ instruments | ✅ 52 tickers |
-| Daily prices (yfinance) | ✅ asset_prices |
-| News collection | ✅ asset_news |
-| Returns calculation | ✅ asset_returns |
-| PDF with table | ✅ TOUS les assets |
-| PDF with chart | ✅ Top 5 performers |
-| PDF with news | ✅ Avec liens cliquables |
-| Dagster orchestration | ✅ 5 assets |
-| Lineage tracking | ✅ Dependencies graph |
-| Error handling | ✅ Retry + logs |
-| Tests | ✅ pytest tests/ |
-| Dagster UI | ✅ Visualization |
-| **BONUS: Quality checks** | ✅ data_quality_report |
+| 50+ instruments | ✅ 52 tickers (tech, finance, consumer, energy, ETFs, crypto) |
+| Daily prices | ✅ asset_prices (Yahoo Finance API) |
+| News collection | ✅ asset_news (Google RSS) |
+| Returns calculation | ✅ asset_returns (formule %) |
+| PDF with table | ✅ Table complète des 52 assets |
+| PDF with chart | ✅ Top 5 performers (bar chart) |
+| PDF with news | ✅ 1 news par ticker avec liens |
+| Dagster orchestration | ✅ 5 assets interconnectés |
+| Lineage tracking | ✅ Graph auto-généré |
+| Error handling | ✅ Délais + logs |
+| Dagster UI | ✅ http://localhost:3000 |
+| **BONUS: Quality checks** | ✅ 5 validations automatiques |
+
+## 🎤 Points clés pour interview
+
+### Asset-based paradigm
+> "Dagster utilise des assets au lieu de tasks. Chaque asset produit des données réutilisables et traçables."
+
+### Automatic dependency resolution
+> "Je définis les dépendances avec les paramètres de fonction, et Dagster passe automatiquement les données entre assets."
+
+### Lineage tracking
+> "L'UI montre le graph complet : prices/news → returns → quality → PDF. C'est automatique."
+
+### API robustesse
+> "J'utilise l'API REST Yahoo directe au lieu de yfinance pour éviter les blocages, avec délais séquentiels."
+
+### Data quality
+> "Le pipeline valide la qualité des données avant génération du PDF : complétude, prix valides, outliers."
+
+## 📝 Exemple d'exécution
+
+```bash
+./run.sh
+# Ouvrir http://localhost:3000
+# Cliquer "Materialize all"
+# Observer l'exécution en temps réel
+# PDF généré dans outputs/
+```
